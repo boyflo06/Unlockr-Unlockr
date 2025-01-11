@@ -7,6 +7,7 @@ const	codeInfo = document.getElementById("code_info")
 var	tempjson = null;
 
 async function	getCode() {
+	tempjson = null;
 	var		fetched = await fetch(`https://app.unlockr.app/generateCode?uid=${crypto.randomUUID().toUpperCase()}&ver=1.1.4`);
 	tempjson = await fetched.json();
 	codeText.innerHTML = tempjson.code;
