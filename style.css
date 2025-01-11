@@ -1,0 +1,61 @@
+
+html, body {
+	background-color: #FAF9F9;
+	min-height: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.code_button {
+	height: 20rem;
+	width: 20rem;
+	background: conic-gradient(blue 1.5deg, white 0deg);
+	border: 2px solid rgb(201, 201, 201);
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.code_button::before {
+	content: "";
+	position: absolute;
+	background-color: white;
+	width: 18.5rem;
+	height: 18.5rem;
+	border-radius: 50%;
+}
+
+.code_button_text {
+	color: red;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 10px;
+	font-size: 5rem;
+	font-family: monospace;
+	margin-left: 10px;
+	z-index: 10;
+}
+
+.code_button .code_button_info {
+	margin-bottom: 10px;
+	position: absolute;
+	color: grey;
+	top: 70%;
+	left: 50%;
+	font-size: large;
+	transform: translate(-50%, -50%);
+}
+
+.refresh_button {
+	margin-top: 1.5rem;
+	background-color: rgb(59, 134, 255);
+	font-size: larger;
+	width: 12rem;
+	border: none;
+	border-radius: 1.75rem;
+}
